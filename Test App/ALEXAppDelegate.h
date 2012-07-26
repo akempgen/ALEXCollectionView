@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ALEXAppDelegate : NSObject <NSApplicationDelegate>
+#import "ALEXCollectionView.h"
+
+
+@interface ALEXAppDelegate : NSObject <NSApplicationDelegate, ALEXCollectionViewDataSource>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet ALEXCollectionView *collectionView;
+
 
 @end
