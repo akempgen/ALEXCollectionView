@@ -28,7 +28,7 @@
 
 -(NSInteger)collectionView:(ALEXCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-	return 1;
+	return 3;
 }
 
 -(NSView *)collectionView:(ALEXCollectionView *)collectionView viewForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -48,7 +48,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(ALEXCollectionView *)collectionView
 {
-	return 4;
+	return 2;
 }
 
 - (NSView *)collectionView:(ALEXCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
