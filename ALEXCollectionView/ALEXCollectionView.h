@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "ALEXView.h"
+
 @protocol ALEXCollectionViewDataSource;
 
 
-@interface ALEXCollectionView : NSView
+@interface ALEXCollectionView : ALEXView
 
 @property (unsafe_unretained) IBOutlet id <ALEXCollectionViewDataSource> dataSource;
 

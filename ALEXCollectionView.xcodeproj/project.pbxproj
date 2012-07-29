@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C230506015C3695B00A94779 /* ALEXView.m in Sources */ = {isa = PBXBuildFile; fileRef = C230505F15C3695B00A94779 /* ALEXView.m */; };
 		C27164E915C077CE00A8D25D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27164E815C077CE00A8D25D /* Cocoa.framework */; };
 		C27164F315C077CE00A8D25D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C27164F115C077CE00A8D25D /* InfoPlist.strings */; };
 		C27164F515C077CE00A8D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27164F415C077CE00A8D25D /* main.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C230505E15C3695B00A94779 /* ALEXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEXView.h; sourceTree = "<group>"; };
+		C230505F15C3695B00A94779 /* ALEXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALEXView.m; sourceTree = "<group>"; };
 		C27164E415C077CE00A8D25D /* ALEXCollectionView Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALEXCollectionView Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27164E815C077CE00A8D25D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C27164EB15C077CE00A8D25D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				C27164FA15C077CE00A8D25D /* ALEXAppDelegate.h */,
 				C27164FB15C077CE00A8D25D /* ALEXAppDelegate.m */,
 				C27164FD15C077CE00A8D25D /* MainMenu.xib */,
+				C230505E15C3695B00A94779 /* ALEXView.h */,
+				C230505F15C3695B00A94779 /* ALEXView.m */,
 				C27164EF15C077CE00A8D25D /* Supporting Files */,
 			);
 			path = "Test App";
@@ -278,6 +283,7 @@
 				C27164F515C077CE00A8D25D /* main.m in Sources */,
 				C27164FC15C077CE00A8D25D /* ALEXAppDelegate.m in Sources */,
 				C2B6CF5415C0786500AB79AC /* ALEXCollectionView.m in Sources */,
+				C230506015C3695B00A94779 /* ALEXView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
