@@ -144,7 +144,7 @@
 		{
 			
 				NSDictionary *flexibleSpaceViewDict = NSDictionaryOfVariableBindings(view);
-				[constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view]-0-|" options:0 metrics:nil views:flexibleSpaceViewDict]];
+				[constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view]-(>=0)-|" options:0 metrics:nil views:flexibleSpaceViewDict]];
 		}
 		
 	}];

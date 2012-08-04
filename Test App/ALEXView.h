@@ -10,4 +10,7 @@
 
 @interface ALEXView : NSView
 
+@property (strong) NSGradient* gradient;
+@property (assign) CGFloat angle;
+
 @end

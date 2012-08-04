@@ -23,6 +23,27 @@
 	self = [super initWithFrame:frame];
 	if (self)
 	{
+		NSColor* startingColor = [NSColor redColor];
+		NSColor* endingColor = [NSColor blueColor];
+		NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:startingColor
+															 endingColor:endingColor];
+		_gradient = gradient;
+		_angle = -90.;
+	}
+	
+	return self;
+}
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	if (self)
+	{
+		NSColor* startingColor = [NSColor redColor];
+		NSColor* endingColor = [NSColor blueColor];
+		NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:startingColor
+															 endingColor:endingColor];
+		_gradient = gradient;
+		_angle = -90.;
 	}
 	
 	return self;
@@ -30,12 +51,10 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-	NSColor* startingColor = [NSColor redColor];
-	NSColor* endingColor = [NSColor blueColor];
-	NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:startingColor
-														  endingColor:endingColor];
+	[super drawRect:dirtyRect];
 	
-	[gradient drawInRect:self.bounds angle:-90.];
+	if ( self.gradient )
+		[self.gradient drawInRect:self.bounds angle:self.angle];
 }
 
 @end

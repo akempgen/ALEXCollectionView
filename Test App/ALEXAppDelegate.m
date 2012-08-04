@@ -34,14 +34,14 @@
 -(NSView *)collectionView:(ALEXCollectionView *)collectionView viewForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	
-	return [collectionView makeViewWithIdentifier:@"tablecell" owner:self];
+	NSTableCellView *tableCellView =  [collectionView makeViewWithIdentifier:@"tablecell" owner:self];
 	
+	NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:[NSColor greenColor] endingColor:[NSColor yellowColor]];
 	
+	[[tableCellView subviews][0] setGradient:gradient];
+	[[tableCellView subviews][0] setAngle:([indexPath indexAtPosition:indexPath.length-1]%2 == 0?0:180)];
 	
-	NSTextField *textField = [[NSTextField alloc] initWithFrame:NSMakeRect(0., 0., 300., 30.)];
-	textField.stringValue = [NSString stringWithFormat:@"Item %@", indexPath];
-	[textField setEditable:NO];
-	return textField;
+	return tableCellView;
 	
 }
 
@@ -54,15 +54,9 @@
 - (NSView *)collectionView:(ALEXCollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
 	
-	return [collectionView makeViewWithIdentifier:@"group" owner:self];
+	NSView* view = [collectionView makeViewWithIdentifier:@"group" owner:self];
 
-	
-	
-	NSTextField *textField = [[NSTextField alloc] initWithFrame:NSMakeRect(0., 0., 300., 30.)];
-	textField.stringValue = [NSString stringWithFormat:@"Section %@", indexPath];
-	
-	[textField setEditable:NO];
-	return textField;
+	return view;
 }
 
 
